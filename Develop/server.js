@@ -1,6 +1,7 @@
 const express = require('express');
 const uuid = require('uuid');
 const app = express();
+const fs= require("fs");
 
 const PORT = process.env.PORT || 3000;
 
@@ -10,7 +11,7 @@ app.use( express.static('public') );
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const dbFile = '/db/db.json';
+const dbFile = JSON.parse(fs.readFileSync('db/db.json',"utf8"));
 
 let noteList = [{id: "0000-0000-0000-0000", title: 'To Do', text: 'Finish Assignment 11'}];
 
@@ -27,23 +28,19 @@ app.get('/notes', function(req, res) {
 
 app.get('/api/notes', function(req, res) {
     // get the note info
-    res.send(JSON.stringify(noteList));
+    res.send(dbFile);
 });
 
 app.post('/api/notes', function(req, res) {
     // get the note info
     console.log(req.body)
-    var newNote = (req.body);
+    var newNote = req.body;
     newNote.id = uuid.v4()
-    noteList.push(newNote);
+    dbFile.push(newNote);
     console.log(newNote.id)
-    res.send(JSON.stringify(noteList));
+    res.json(dbFile)
+    fs.writeFileSync("db/db.json",JSON.stringify(dbFile));
 });
-
-// app.delete('/api/notes ; deleteNote', function(req, res) {
-//
-// res.send( noteData );
-// });
 
 // Listener ==================================================
 app.listen(PORT, function() {

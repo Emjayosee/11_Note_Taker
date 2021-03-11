@@ -1,13 +1,1 @@
-[
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    },
-
-    {
-        "title":"TO DO",
-        "text":"GET VACCINE \n Do Dishes \n"
-    }
-
-    
-]
+[{"title":"Coding Course","text":"Finish Assignment 11:\n\n1. Set up on Heroku\n2. Test on Heroku\n3. Consider adding the delete feature or not\n4. Submit","id":"f885e68a-0ebc-41af-9187-c0bf2ba44454"},{"title":"Groceries","text":"Milk\nEggs\nBread\nCake","id":"053640f0-ad91-477c-a7a9-39a08e3fed5e"},{"title":"Chores","text":"Walk the dogs\nDo the laundry\nVacuum\n","id":"48afbc96-5c2d-428a-8434-202fe22230b4"}]
