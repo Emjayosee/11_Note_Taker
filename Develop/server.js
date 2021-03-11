@@ -33,7 +33,7 @@ app.get('/api/notes', function(req, res) {
 app.post('/api/notes', function(req, res) {
     // get the note info
     console.log(req.body)
-    var newNote = [];
+    var newNote = (req.body);
     newNote.id = uuid.v4()
     noteList.push(newNote);
     console.log(newNote.id)
