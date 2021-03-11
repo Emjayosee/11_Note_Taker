@@ -4,7 +4,7 @@ This is the repo for Assignment 11 due February 19, 2021.
 
 Here is a link to the app on Heroku https://mjocnotetaker.herokuapp.com/ and a link to the GitHub Folder https://github.com/Emjayosee/Assignment11. 
 
-# Unit 10: Team Profile Generator
+# Unit 11: Note Taker
 
 Submitted: March 11, 2021, Michael O'Connor, 604 765 6061
 
@@ -23,26 +23,27 @@ Submitted: March 11, 2021, Michael O'Connor, 604 765 6061
 
 # 01 Goal: 
 
-    The goal is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file. The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
+    The goal is to modify starter code to create an application called Note Taker that can be used to
+    write and save notes. This application will use an Express.js back end and will save and retrieve 
+    note data from a JSON file. The application’s front end has already been created. It's your job to 
+    build the back end, connect the two, and then deploy the entire application to Heroku.
 
 # 02 Approach:
 
-    In approaching this project, I at first struggled to get the inquirer routine going.  Then after
-    a tutorial, I was able to do so but still needed to develop the unique requirements for each team
-    member.  To simplify the inputs, I studied how to work with switch statements and then created 
-    the same data routine for all employees, but switched the final question depending on the role 
-    of the person.  THis I felt made more sense in case there ever was an "inband" reporting situation.
+    In approaching this project, I reviewed the class material and the video from classs on how to create get and posts and work with JSON files.  I also read up on how JSON files work.
 
     Acceptance requirements include: 
             
-            [X] GIVEN a note-taking application, when the NOte Taker is opened a landing page with a link to a enter a new note is offered
+            [X] GIVEN a note-taking application, when the Note Taker is opened a landing page with a link to a enter a new note is offered
             [X] When the user clicks on the link to add a new note, a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column is presented
             [X]The User enters a new note title and the note’s text and a Save icon appears in the navigation at the top of the page
             [X] When the Save icon is clicked, the new note entered is saved and appears in the left-hand column with the other existing notes
-            [X] Wen the user clicks on an existing note in the list in the left-hand column that note appears in 
+            [X] When the user clicks on an existing note in the list in the left-hand column that note 
+            appears
+            [X] THERE IS A DELETE BUTTON BUT IT HAS NOT BEEN ACTIVATED
 
 
-    I was able to review a number of the examples in the class session to get a feel for  how to set up the API endpoints to display, but I needed further help from Tutor to get the app to connect fully.  I had no issue with loading the app into Heroku.  I thought about attempting to develop the delet feature, but since I was behind on assigments, I passed.  I did find some useful info here on how to do that with a JSON array https://www.tutorialspoint.com/search-by-id-and-remove-object-from-json-array-in-javascript. 
+    I was able to review a number of the examples in the class session to get a feel for  how to set up the API endpoints to display, but I needed further help from Tutor to get the app to connect fully.  I had no issue with loading the app into Heroku.  I thought about attempting to develop the delete feature, but since I was behind on assigments, I passed.  I did find some useful info here on how to do that with a JSON array https://www.tutorialspoint.com/search-by-id-and-remove-object-from-json-array-in-javascript. 
 
 
 # 03 Deliverable Requirements:
